@@ -24,7 +24,7 @@ echo "Removing any previous overview-local repository..."
 rm -rf overview-local
 
 echo "Downloading overview-local repository..."
-git clone https://github.com/overview/overview-local.git
+git clone https://github.com/williamjturkel/overview-local.git
 
 echo "Launching..."
 overview-local/start
