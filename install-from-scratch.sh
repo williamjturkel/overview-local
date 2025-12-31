@@ -12,7 +12,10 @@ fatal() {
 
 hash git 2>/dev/null || fatal 'You must install `git` and have it in your path to install Overview.'
 hash docker 2>/dev/null || fatal 'You must install `docker` and have it in your path to install Overview.'
-hash docker-compose 2>/dev/null || fatal 'You must install `docker-compose` and have it in your path to install Overview.'
+
+if ! hash docker-compose 2>/dev/null && ! docker compose version >/dev/null 2>&1; then
+  fatal 'You must install `docker-compose` (or `docker compose` plugin) and have it in your path to install Overview.'
+fi
 
 echo "Changing to home directory..."
 cd # We always install to the home directory; that's easier for new users.
