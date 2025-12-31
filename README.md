@@ -68,7 +68,7 @@ to see Overview's URL on the screen. (It's [http://localhost:9000/](http://local
 1. Give Docker more resources (see below).
 1. Install `git`, from [https://git-scm.com/downloads](https://git-scm.com/downloads).
 1. Open Mac OS's _Terminal_.
-1. Copy/paste this command into the terminal and press Enter: `curl https://raw.githubusercontent.com/overview/overview-local/master/install-from-scratch.sh | sh`
+1. Copy/paste this command into the terminal and press Enter: `curl https://raw.githubusercontent.com/williamjturkel/overview-local/master/install-from-scratch.sh | sh`
 
 If all goes well, you'll see progress bars. Grab a coffee; in a few minutes, return
 to see Overview's URL on the screen. (It's [http://localhost:9000/](http://localhost:9000/).)
